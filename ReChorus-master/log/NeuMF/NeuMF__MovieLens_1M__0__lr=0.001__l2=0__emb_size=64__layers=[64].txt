@@ -1,0 +1,133 @@
+INFO:root:Namespace(model_name='NeuMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 14:09:06 ---------------------------------------------
+INFO:root:
+===================================
+ Arguments          | Values       
+===================================
+ batch_size         | 256         
+ data_appendix      |             
+ dataset            | MovieLens_1M
+ dropout            | 0           
+ early_stop         | 10          
+ emb_size           | 64          
+ epoch              | 200         
+ eval_batch_size    | 256         
+ gpu                | 0           
+ l2                 | 0           
+ layers             | [64]        
+ lr                 | 0.001       
+ main_metric        |             
+ num_neg            | 1           
+ num_workers        | 5           
+ optimizer          | Adam        
+ random_seed        | 0           
+ save_final_results | 1           
+ test_all           | 0           
+ topk               | 5,10,20,50  
+===================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MovieLens_1M" 
+INFO:root:Namespace(model_name='NeuMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 14:09:47 ---------------------------------------------
+INFO:root:
+===================================
+ Arguments          | Values       
+===================================
+ batch_size         | 256         
+ data_appendix      |             
+ dataset            | MovieLens_1M
+ dropout            | 0           
+ early_stop         | 10          
+ emb_size           | 64          
+ epoch              | 200         
+ eval_batch_size    | 256         
+ gpu                | 0           
+ l2                 | 0           
+ layers             | [64]        
+ lr                 | 0.001       
+ main_metric        |             
+ num_neg            | 1           
+ num_workers        | 5           
+ optimizer          | Adam        
+ random_seed        | 0           
+ save_final_results | 1           
+ test_all           | 0           
+ topk               | 5,10,20,50  
+===================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MovieLens_1M" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 6040, "# item": 3706, "# entry": 1000209
+INFO:root:Save corpus to data/MovieLens_1M/BaseReader.pkl
+INFO:root:#params: 1256128
+INFO:root:NeuMF(
+  (mf_u_embeddings): Embedding(6041, 64)
+  (mf_i_embeddings): Embedding(3707, 64)
+  (mlp_u_embeddings): Embedding(6041, 64)
+  (mlp_i_embeddings): Embedding(3707, 64)
+  (mlp): ModuleList(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+  )
+  (dropout_layer): Dropout(p=0, inplace=False)
+  (prediction): Linear(in_features=128, out_features=1, bias=False)
+)
+INFO:root:Test Before Training: (HR@5:0.0560,NDCG@5:0.0323,HR@10:0.1108,NDCG@10:0.0498,HR@20:0.2026,NDCG@20:0.0728,HR@50:0.5056,NDCG@50:0.1317)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.2986 [11.8 s]	dev=(HR@5:0.3924,NDCG@5:0.2629) [4.5 s] *
+INFO:root:Epoch 2     loss=0.2061 [12.1 s]	dev=(HR@5:0.4374,NDCG@5:0.2957) [4.6 s] *
+INFO:root:Epoch 3     loss=0.1775 [12.5 s]	dev=(HR@5:0.4568,NDCG@5:0.3100) [4.7 s] *
+INFO:root:Epoch 4     loss=0.1605 [13.2 s]	dev=(HR@5:0.4714,NDCG@5:0.3201) [4.7 s] *
+INFO:root:Epoch 5     loss=0.1479 [13.0 s]	dev=(HR@5:0.4763,NDCG@5:0.3282) [4.7 s] *
+INFO:root:Epoch 6     loss=0.1385 [13.3 s]	dev=(HR@5:0.4849,NDCG@5:0.3331) [4.7 s] *
+INFO:root:Epoch 7     loss=0.1313 [13.4 s]	dev=(HR@5:0.4912,NDCG@5:0.3345) [4.7 s] *
+INFO:root:Epoch 8     loss=0.1257 [13.5 s]	dev=(HR@5:0.4998,NDCG@5:0.3412) [4.8 s] *
+INFO:root:Epoch 9     loss=0.1212 [13.5 s]	dev=(HR@5:0.5000,NDCG@5:0.3425) [4.8 s] *
+INFO:root:Epoch 10    loss=0.1178 [13.6 s]	dev=(HR@5:0.5050,NDCG@5:0.3475) [4.8 s] *
+INFO:root:Epoch 11    loss=0.1143 [13.6 s]	dev=(HR@5:0.5070,NDCG@5:0.3503) [4.8 s] *
+INFO:root:Epoch 12    loss=0.1114 [13.8 s]	dev=(HR@5:0.5103,NDCG@5:0.3518) [4.8 s] *
+INFO:root:Epoch 13    loss=0.1096 [13.7 s]	dev=(HR@5:0.5071,NDCG@5:0.3505) [4.8 s]
+INFO:root:Epoch 14    loss=0.1078 [14.8 s]	dev=(HR@5:0.5045,NDCG@5:0.3468) [4.9 s]
+INFO:root:Epoch 15    loss=0.1055 [14.1 s]	dev=(HR@5:0.5066,NDCG@5:0.3454) [4.8 s]
+INFO:root:Epoch 16    loss=0.1043 [13.8 s]	dev=(HR@5:0.5103,NDCG@5:0.3500) [4.8 s]
+INFO:root:Epoch 17    loss=0.1026 [13.9 s]	dev=(HR@5:0.5108,NDCG@5:0.3520) [4.8 s] *
+INFO:root:Epoch 18    loss=0.1019 [13.9 s]	dev=(HR@5:0.5134,NDCG@5:0.3559) [4.8 s] *
+INFO:root:Epoch 19    loss=0.1000 [14.0 s]	dev=(HR@5:0.5103,NDCG@5:0.3540) [4.8 s]
+INFO:root:Epoch 20    loss=0.0997 [13.9 s]	dev=(HR@5:0.5079,NDCG@5:0.3534) [4.8 s]
+INFO:root:Epoch 21    loss=0.0980 [14.0 s]	dev=(HR@5:0.5123,NDCG@5:0.3554) [4.8 s]
+INFO:root:Epoch 22    loss=0.0972 [14.1 s]	dev=(HR@5:0.5204,NDCG@5:0.3607) [4.8 s] *
+INFO:root:Epoch 23    loss=0.0961 [14.2 s]	dev=(HR@5:0.5159,NDCG@5:0.3573) [4.8 s]
+INFO:root:Epoch 24    loss=0.0948 [14.0 s]	dev=(HR@5:0.5083,NDCG@5:0.3494) [4.9 s]
+INFO:root:Epoch 25    loss=0.0951 [13.9 s]	dev=(HR@5:0.5101,NDCG@5:0.3523) [4.8 s]
+INFO:root:Epoch 26    loss=0.0940 [14.1 s]	dev=(HR@5:0.5136,NDCG@5:0.3550) [4.8 s]
+INFO:root:Epoch 27    loss=0.0931 [14.1 s]	dev=(HR@5:0.5109,NDCG@5:0.3529) [4.8 s]
+INFO:root:Epoch 28    loss=0.0928 [14.0 s]	dev=(HR@5:0.5088,NDCG@5:0.3515) [4.8 s]
+INFO:root:Epoch 29    loss=0.0917 [13.8 s]	dev=(HR@5:0.5179,NDCG@5:0.3572) [4.8 s]
+INFO:root:Epoch 30    loss=0.0904 [14.0 s]	dev=(HR@5:0.5209,NDCG@5:0.3608) [4.8 s] *
+INFO:root:Epoch 31    loss=0.0901 [14.1 s]	dev=(HR@5:0.5174,NDCG@5:0.3603) [4.8 s]
+INFO:root:Epoch 32    loss=0.0898 [14.0 s]	dev=(HR@5:0.5073,NDCG@5:0.3531) [4.8 s]
+INFO:root:Epoch 33    loss=0.0894 [13.8 s]	dev=(HR@5:0.5094,NDCG@5:0.3525) [4.8 s]
+INFO:root:Epoch 34    loss=0.0889 [14.0 s]	dev=(HR@5:0.5098,NDCG@5:0.3545) [4.8 s]
+INFO:root:Epoch 35    loss=0.0885 [13.9 s]	dev=(HR@5:0.5161,NDCG@5:0.3613) [4.8 s] *
+INFO:root:Epoch 36    loss=0.0870 [13.8 s]	dev=(HR@5:0.5134,NDCG@5:0.3563) [4.8 s]
+INFO:root:Epoch 37    loss=0.0877 [14.3 s]	dev=(HR@5:0.5210,NDCG@5:0.3604) [4.8 s]
+INFO:root:Epoch 38    loss=0.0868 [14.0 s]	dev=(HR@5:0.5111,NDCG@5:0.3549) [4.8 s]
+INFO:root:Epoch 39    loss=0.0863 [13.8 s]	dev=(HR@5:0.5141,NDCG@5:0.3573) [4.8 s]
+INFO:root:Epoch 40    loss=0.0858 [13.8 s]	dev=(HR@5:0.5159,NDCG@5:0.3584) [4.8 s]
+INFO:root:Epoch 41    loss=0.0846 [14.0 s]	dev=(HR@5:0.5152,NDCG@5:0.3574) [4.8 s]
+INFO:root:Epoch 42    loss=0.0849 [14.1 s]	dev=(HR@5:0.5126,NDCG@5:0.3579) [4.8 s]
+INFO:root:Epoch 43    loss=0.0841 [14.1 s]	dev=(HR@5:0.5063,NDCG@5:0.3547) [4.8 s]
+INFO:root:Epoch 44    loss=0.0841 [13.8 s]	dev=(HR@5:0.5066,NDCG@5:0.3549) [4.8 s]
+INFO:root:Early stop at 44 based on dev result.
+INFO:root:
+Best Iter(dev)=   35	 dev=(HR@5:0.5161,NDCG@5:0.3613) [814.7 s] 
+INFO:root:Load model from ../model/NeuMF/NeuMF__MovieLens_1M__0__lr=0.001__l2=0__emb_size=64__layers=[64].pt
+INFO:root:
+Dev  After Training: (HR@5:0.5161,NDCG@5:0.3613,HR@10:0.6851,NDCG@10:0.4160,HR@20:0.8464,NDCG@20:0.4571,HR@50:0.9675,NDCG@50:0.4817)
+INFO:root:
+Test After Training: (HR@5:0.4919,NDCG@5:0.3388,HR@10:0.6611,NDCG@10:0.3938,HR@20:0.8227,NDCG@20:0.4347,HR@50:0.9618,NDCG@50:0.4628)
+INFO:root:Saving top-100 recommendation results to: ../log/NeuMF/NeuMF__MovieLens_1M__0__lr=0/rec-NeuMF-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/NeuMF/NeuMF__MovieLens_1M__0__lr=0/rec-NeuMF-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-12-30 14:23:47 ---------------------------------------------

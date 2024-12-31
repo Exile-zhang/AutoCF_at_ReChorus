@@ -1,0 +1,99 @@
+INFO:root:Namespace(model_name='BPRMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 00:10:18 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | MINDTOPK  
+ dropout            | 0         
+ early_stop         | 10        
+ emb_size           | 64        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 0         
+ lr                 | 0.001     
+ main_metric        |           
+ num_neg            | 1         
+ num_workers        | 5         
+ optimizer          | Adam      
+ random_seed        | 0         
+ save_final_results | 1         
+ test_all           | 0         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MINDTOPK" 
+INFO:root:Namespace(model_name='BPRMF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 00:10:57 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | MINDTOPK  
+ dropout            | 0         
+ early_stop         | 10        
+ emb_size           | 64        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 0         
+ lr                 | 0.001     
+ main_metric        |           
+ num_neg            | 1         
+ num_workers        | 5         
+ optimizer          | Adam      
+ random_seed        | 0         
+ save_final_results | 1         
+ test_all           | 0         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "MINDTOPK" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 267742, "# item": 8572, "# entry": 2765523
+INFO:root:Save corpus to data/MINDTOPK/BaseReader.pkl
+INFO:root:#params: 17684224
+INFO:root:BPRMF(
+  (u_embeddings): Embedding(267743, 64)
+  (i_embeddings): Embedding(8573, 64)
+)
+INFO:root:Test Before Training: (HR@5:0.0469,NDCG@5:0.0272,HR@10:0.0951,NDCG@10:0.0426,HR@20:0.1950,NDCG@20:0.0675,HR@50:0.5003,NDCG@50:0.1271)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.3551 [118.7 s]	dev=(HR@5:0.1320,NDCG@5:0.0725) [17.5 s] *
+INFO:root:Epoch 2     loss=0.1786 [113.0 s]	dev=(HR@5:0.1187,NDCG@5:0.0662) [17.5 s]
+INFO:root:Epoch 3     loss=0.1647 [112.6 s]	dev=(HR@5:0.1327,NDCG@5:0.0758) [17.3 s] *
+INFO:root:Epoch 4     loss=0.1454 [112.4 s]	dev=(HR@5:0.1243,NDCG@5:0.0724) [17.4 s]
+INFO:root:Epoch 5     loss=0.1237 [112.8 s]	dev=(HR@5:0.1319,NDCG@5:0.0758) [19.1 s]
+INFO:root:Epoch 6     loss=0.1028 [194.5 s]	dev=(HR@5:0.1365,NDCG@5:0.0811) [27.1 s] *
+INFO:root:Epoch 7     loss=0.0853 [163.5 s]	dev=(HR@5:0.1358,NDCG@5:0.0797) [18.8 s]
+INFO:root:Epoch 8     loss=0.0696 [112.7 s]	dev=(HR@5:0.1339,NDCG@5:0.0794) [17.7 s]
+INFO:root:Epoch 9     loss=0.0577 [114.2 s]	dev=(HR@5:0.1357,NDCG@5:0.0808) [17.6 s]
+INFO:root:Epoch 10    loss=0.0484 [117.2 s]	dev=(HR@5:0.1450,NDCG@5:0.0881) [18.0 s] *
+INFO:root:Epoch 11    loss=0.0408 [145.6 s]	dev=(HR@5:0.1413,NDCG@5:0.0863) [21.7 s]
+INFO:root:Epoch 12    loss=0.0351 [158.2 s]	dev=(HR@5:0.1429,NDCG@5:0.0870) [22.6 s]
+INFO:root:Epoch 13    loss=0.0310 [156.0 s]	dev=(HR@5:0.1249,NDCG@5:0.0770) [22.6 s]
+INFO:root:Epoch 14    loss=0.0277 [157.2 s]	dev=(HR@5:0.1386,NDCG@5:0.0852) [21.6 s]
+INFO:root:Epoch 15    loss=0.0248 [160.6 s]	dev=(HR@5:0.1280,NDCG@5:0.0785) [22.2 s]
+INFO:root:Epoch 16    loss=0.0229 [169.8 s]	dev=(HR@5:0.1416,NDCG@5:0.0860) [22.3 s]
+INFO:root:Epoch 17    loss=0.0212 [745.3 s]	dev=(HR@5:0.1288,NDCG@5:0.0792) [39.4 s]
+INFO:root:Epoch 18    loss=0.0197 [4148.1 s]	dev=(HR@5:0.1321,NDCG@5:0.0814) [43.3 s]
+INFO:root:Epoch 19    loss=0.0186 [5729.2 s]	dev=(HR@5:0.1288,NDCG@5:0.0795) [22.0 s]
+INFO:root:Early stop at 19 based on dev result.
+INFO:root:
+Best Iter(dev)=   10	 dev=(HR@5:0.1450,NDCG@5:0.0881) [13267.4 s] 
+INFO:root:Load model from ../model/BPRMF/BPRMF__MINDTOPK__0__lr=0.001__l2=0__emb_size=64__batch_size=256.pt
+INFO:root:
+Dev  After Training: (HR@5:0.1450,NDCG@5:0.0881,HR@10:0.2527,NDCG@10:0.1227,HR@20:0.4180,NDCG@20:0.1642,HR@50:0.6511,NDCG@50:0.2108)
+INFO:root:
+Test After Training: (HR@5:0.0955,NDCG@5:0.0609,HR@10:0.1531,NDCG@10:0.0794,HR@20:0.2314,NDCG@20:0.0991,HR@50:0.3522,NDCG@50:0.1233)
+INFO:root:Saving top-100 recommendation results to: ../log/BPRMF/BPRMF__MINDTOPK__0__lr=0/rec-BPRMF-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/BPRMF/BPRMF__MINDTOPK__0__lr=0/rec-BPRMF-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2024-12-30 03:54:26 ---------------------------------------------

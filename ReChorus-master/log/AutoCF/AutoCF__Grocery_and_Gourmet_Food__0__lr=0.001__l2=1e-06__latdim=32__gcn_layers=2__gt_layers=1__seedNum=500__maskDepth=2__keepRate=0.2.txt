@@ -1,0 +1,363 @@
+INFO:root:Namespace(model_name='AutoCF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 12:16:11 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 4096                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ fixSteps           | 10                  
+ gcn_layers         | 2                   
+ gpu                | 0                   
+ gt_layers          | 1                   
+ head               | 4                   
+ keepRate           | 0.2                 
+ l2                 | 1e-06               
+ latdim             | 32                  
+ lr                 | 0.001               
+ main_metric        |                     
+ maskDepth          | 2                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ save_path          | tem                 
+ seedNum            | 500                 
+ ssl_reg            | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ tstBat             | 256                 
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\AutoCFReader.pkl
+INFO:root:#params: 751680
+INFO:root:AutoCF(
+  (gcnLayers): Sequential(
+    (0): GCNLayer()
+    (1): GCNLayer()
+  )
+  (gtLayers): Sequential(
+    (0): GTLayer()
+  )
+)
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 14681, "# item": 8713, "# entry": 151254
+INFO:root:Model Initialized
+INFO:root:Namespace(model_name='AutoCF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 12:19:39 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 4096                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ fixSteps           | 10                  
+ gcn_layers         | 2                   
+ gpu                | 0                   
+ gt_layers          | 1                   
+ head               | 4                   
+ keepRate           | 0.2                 
+ l2                 | 1e-06               
+ latdim             | 32                  
+ lr                 | 0.001               
+ main_metric        |                     
+ maskDepth          | 2                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ save_path          | tem                 
+ seedNum            | 500                 
+ ssl_reg            | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ tstBat             | 256                 
+===========================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food\AutoCFReader.pkl
+INFO:root:#params: 751680
+INFO:root:AutoCF(
+  (gcnLayers): Sequential(
+    (0): GCNLayer()
+    (1): GCNLayer()
+  )
+  (gtLayers): Sequential(
+    (0): GTLayer()
+  )
+)
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 14681, "# item": 8713, "# entry": 151254
+INFO:root:Model Initialized
+INFO:root:Namespace(model_name='AutoCF', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2024-12-30 12:20:15 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 4096                
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ epoch              | 100                 
+ eval_batch_size    | 256                 
+ fixSteps           | 10                  
+ gcn_layers         | 2                   
+ gpu                | 0                   
+ gt_layers          | 1                   
+ head               | 4                   
+ keepRate           | 0.2                 
+ l2                 | 1e-06               
+ latdim             | 32                  
+ lr                 | 0.001               
+ main_metric        |                     
+ maskDepth          | 2                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ save_final_results | 1                   
+ save_path          | tem                 
+ seedNum            | 500                 
+ ssl_reg            | 1                   
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+ tstBat             | 256                 
+===========================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 14681, "# item": 8713, "# entry": 151254
+INFO:root:Save corpus to data/Grocery_and_Gourmet_Food\AutoCFReader.pkl
+INFO:root:#params: 255648
+INFO:root:AutoCF(
+  (gcnLayers): Sequential(
+    (0): GCNLayer()
+    (1): GCNLayer()
+  )
+  (gtLayers): Sequential(
+    (0): GTLayer()
+  )
+)
+INFO:root:Reading data from "data/", dataset = "Grocery_and_Gourmet_Food" 
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 14681, "# item": 8713, "# entry": 151254
+INFO:root:Model Initialized
+INFO:root:Epoch 0/100, Train: Loss = 31.0003, preLoss = -0.0053  
+INFO:root:Epoch 0/100, Test: HR@5 = 0.0000, NDCG@5 = 0.0000, HR@10 = 0.0000, NDCG@10 = 0.0000, HR@20 = 0.0003, NDCG@20 = 0.0001, HR@50 = 0.0013, NDCG@50 = 0.0002  
+INFO:root:Epoch 1/100, Train: Loss = 30.9711, preLoss = -0.0080  
+INFO:root:Epoch 1/100, Test: HR@5 = 0.0013, NDCG@5 = 0.0005, HR@10 = 0.0030, NDCG@10 = 0.0009, HR@20 = 0.0067, NDCG@20 = 0.0014, HR@50 = 0.0174, NDCG@50 = 0.0027  
+INFO:root:Epoch 2/100, Train: Loss = 30.9621, preLoss = -0.0107  
+INFO:root:Epoch 2/100, Test: HR@5 = 0.0174, NDCG@5 = 0.0063, HR@10 = 0.0272, NDCG@10 = 0.0080, HR@20 = 0.0406, NDCG@20 = 0.0102, HR@50 = 0.0755, NDCG@50 = 0.0148  
+INFO:root:Epoch 3/100, Train: Loss = 30.9482, preLoss = -0.0139  
+INFO:root:Epoch 3/100, Test: HR@5 = 0.0513, NDCG@5 = 0.0200, HR@10 = 0.0741, NDCG@10 = 0.0247, HR@20 = 0.1040, NDCG@20 = 0.0300, HR@50 = 0.1630, NDCG@50 = 0.0389  
+INFO:root:Epoch 4/100, Train: Loss = 30.9232, preLoss = -0.0191  
+INFO:root:Epoch 4/100, Test: HR@5 = 0.0842, NDCG@5 = 0.0346, HR@10 = 0.1141, NDCG@10 = 0.0418, HR@20 = 0.1516, NDCG@20 = 0.0493, HR@50 = 0.2177, NDCG@50 = 0.0597  
+INFO:root:Epoch 5/100, Train: Loss = 30.8838, preLoss = -0.0292  
+INFO:root:Epoch 5/100, Test: HR@5 = 0.1084, NDCG@5 = 0.0474, HR@10 = 0.1449, NDCG@10 = 0.0563, HR@20 = 0.1852, NDCG@20 = 0.0656, HR@50 = 0.2553, NDCG@50 = 0.0784  
+INFO:root:Epoch 6/100, Train: Loss = 30.8487, preLoss = -0.0383  
+INFO:root:Epoch 6/100, Test: HR@5 = 0.1181, NDCG@5 = 0.0520, HR@10 = 0.1583, NDCG@10 = 0.0637, HR@20 = 0.2066, NDCG@20 = 0.0745, HR@50 = 0.2811, NDCG@50 = 0.0889  
+INFO:root:Epoch 7/100, Train: Loss = 30.8010, preLoss = -0.0540  
+INFO:root:Epoch 7/100, Test: HR@5 = 0.1214, NDCG@5 = 0.0556, HR@10 = 0.1657, NDCG@10 = 0.0682, HR@20 = 0.2164, NDCG@20 = 0.0802, HR@50 = 0.2945, NDCG@50 = 0.0954  
+INFO:root:Epoch 8/100, Train: Loss = 30.7348, preLoss = -0.0708  
+INFO:root:Epoch 8/100, Test: HR@5 = 0.1221, NDCG@5 = 0.0564, HR@10 = 0.1671, NDCG@10 = 0.0686, HR@20 = 0.2214, NDCG@20 = 0.0827, HR@50 = 0.3043, NDCG@50 = 0.0985  
+INFO:root:Epoch 9/100, Train: Loss = 30.6677, preLoss = -0.0934  
+INFO:root:Epoch 9/100, Test: HR@5 = 0.1188, NDCG@5 = 0.0555, HR@10 = 0.1671, NDCG@10 = 0.0683, HR@20 = 0.2224, NDCG@20 = 0.0830, HR@50 = 0.3120, NDCG@50 = 0.0997  
+INFO:root:Epoch 10/100, Train: Loss = 30.6031, preLoss = -0.1289  
+INFO:root:Epoch 10/100, Test: HR@5 = 0.1194, NDCG@5 = 0.0553, HR@10 = 0.1647, NDCG@10 = 0.0675, HR@20 = 0.2227, NDCG@20 = 0.0829, HR@50 = 0.3197, NDCG@50 = 0.1012  
+INFO:root:Epoch 11/100, Train: Loss = 30.5352, preLoss = -0.1609  
+INFO:root:Epoch 11/100, Test: HR@5 = 0.1174, NDCG@5 = 0.0552, HR@10 = 0.1681, NDCG@10 = 0.0684, HR@20 = 0.2227, NDCG@20 = 0.0831, HR@50 = 0.3274, NDCG@50 = 0.1026  
+INFO:root:Epoch 12/100, Train: Loss = 30.5000, preLoss = -0.1647  
+INFO:root:Epoch 12/100, Test: HR@5 = 0.1188, NDCG@5 = 0.0560, HR@10 = 0.1684, NDCG@10 = 0.0683, HR@20 = 0.2271, NDCG@20 = 0.0847, HR@50 = 0.3287, NDCG@50 = 0.1037  
+INFO:root:Epoch 13/100, Train: Loss = 30.4645, preLoss = -0.1699  
+INFO:root:Epoch 13/100, Test: HR@5 = 0.1211, NDCG@5 = 0.0565, HR@10 = 0.1711, NDCG@10 = 0.0691, HR@20 = 0.2288, NDCG@20 = 0.0857, HR@50 = 0.3301, NDCG@50 = 0.1045  
+INFO:root:Epoch 14/100, Train: Loss = 30.4287, preLoss = -0.1802  
+INFO:root:Epoch 14/100, Test: HR@5 = 0.1251, NDCG@5 = 0.0571, HR@10 = 0.1724, NDCG@10 = 0.0698, HR@20 = 0.2274, NDCG@20 = 0.0863, HR@50 = 0.3287, NDCG@50 = 0.1055  
+INFO:root:Epoch 15/100, Train: Loss = 30.3840, preLoss = -0.1966  
+INFO:root:Epoch 15/100, Test: HR@5 = 0.1241, NDCG@5 = 0.0568, HR@10 = 0.1731, NDCG@10 = 0.0700, HR@20 = 0.2298, NDCG@20 = 0.0868, HR@50 = 0.3311, NDCG@50 = 0.1064  
+INFO:root:Epoch 16/100, Train: Loss = 30.3979, preLoss = -0.1789  
+INFO:root:Epoch 16/100, Test: HR@5 = 0.1271, NDCG@5 = 0.0581, HR@10 = 0.1738, NDCG@10 = 0.0710, HR@20 = 0.2311, NDCG@20 = 0.0873, HR@50 = 0.3301, NDCG@50 = 0.1068  
+INFO:root:Epoch 17/100, Train: Loss = 30.3497, preLoss = -0.1982  
+INFO:root:Epoch 17/100, Test: HR@5 = 0.1261, NDCG@5 = 0.0581, HR@10 = 0.1754, NDCG@10 = 0.0717, HR@20 = 0.2291, NDCG@20 = 0.0873, HR@50 = 0.3304, NDCG@50 = 0.1076  
+INFO:root:Epoch 18/100, Train: Loss = 30.3001, preLoss = -0.2285  
+INFO:root:Epoch 18/100, Test: HR@5 = 0.1258, NDCG@5 = 0.0579, HR@10 = 0.1751, NDCG@10 = 0.0717, HR@20 = 0.2298, NDCG@20 = 0.0875, HR@50 = 0.3324, NDCG@50 = 0.1083  
+INFO:root:Epoch 19/100, Train: Loss = 30.2820, preLoss = -0.2369  
+INFO:root:Epoch 19/100, Test: HR@5 = 0.1261, NDCG@5 = 0.0582, HR@10 = 0.1754, NDCG@10 = 0.0724, HR@20 = 0.2291, NDCG@20 = 0.0879, HR@50 = 0.3331, NDCG@50 = 0.1091  
+INFO:root:Epoch 20/100, Train: Loss = 30.2169, preLoss = -0.2941  
+INFO:root:Epoch 20/100, Test: HR@5 = 0.1265, NDCG@5 = 0.0583, HR@10 = 0.1748, NDCG@10 = 0.0725, HR@20 = 0.2305, NDCG@20 = 0.0883, HR@50 = 0.3358, NDCG@50 = 0.1100  
+INFO:root:Epoch 21/100, Train: Loss = 30.2178, preLoss = -0.2772  
+INFO:root:Epoch 21/100, Test: HR@5 = 0.1258, NDCG@5 = 0.0584, HR@10 = 0.1744, NDCG@10 = 0.0729, HR@20 = 0.2301, NDCG@20 = 0.0885, HR@50 = 0.3361, NDCG@50 = 0.1104  
+INFO:root:Epoch 22/100, Train: Loss = 30.1784, preLoss = -0.2986  
+INFO:root:Epoch 22/100, Test: HR@5 = 0.1261, NDCG@5 = 0.0585, HR@10 = 0.1744, NDCG@10 = 0.0733, HR@20 = 0.2308, NDCG@20 = 0.0887, HR@50 = 0.3345, NDCG@50 = 0.1105  
+INFO:root:Epoch 23/100, Train: Loss = 30.1132, preLoss = -0.3441  
+INFO:root:Epoch 23/100, Test: HR@5 = 0.1265, NDCG@5 = 0.0587, HR@10 = 0.1751, NDCG@10 = 0.0731, HR@20 = 0.2325, NDCG@20 = 0.0889, HR@50 = 0.3371, NDCG@50 = 0.1108  
+INFO:root:Epoch 24/100, Train: Loss = 30.1180, preLoss = -0.3252  
+INFO:root:Epoch 24/100, Test: HR@5 = 0.1268, NDCG@5 = 0.0584, HR@10 = 0.1744, NDCG@10 = 0.0727, HR@20 = 0.2321, NDCG@20 = 0.0885, HR@50 = 0.3381, NDCG@50 = 0.1109  
+INFO:root:Epoch 25/100, Train: Loss = 30.0827, preLoss = -0.3242  
+INFO:root:Epoch 25/100, Test: HR@5 = 0.1275, NDCG@5 = 0.0587, HR@10 = 0.1734, NDCG@10 = 0.0726, HR@20 = 0.2318, NDCG@20 = 0.0887, HR@50 = 0.3398, NDCG@50 = 0.1113  
+INFO:root:Epoch 26/100, Train: Loss = 30.0490, preLoss = -0.3643  
+INFO:root:Epoch 26/100, Test: HR@5 = 0.1271, NDCG@5 = 0.0583, HR@10 = 0.1734, NDCG@10 = 0.0724, HR@20 = 0.2311, NDCG@20 = 0.0884, HR@50 = 0.3398, NDCG@50 = 0.1112  
+INFO:root:Epoch 27/100, Train: Loss = 30.0146, preLoss = -0.3916  
+INFO:root:Epoch 27/100, Test: HR@5 = 0.1265, NDCG@5 = 0.0578, HR@10 = 0.1724, NDCG@10 = 0.0719, HR@20 = 0.2305, NDCG@20 = 0.0880, HR@50 = 0.3391, NDCG@50 = 0.1109  
+INFO:root:Epoch 28/100, Train: Loss = 29.9884, preLoss = -0.4406  
+INFO:root:Epoch 28/100, Test: HR@5 = 0.1268, NDCG@5 = 0.0578, HR@10 = 0.1724, NDCG@10 = 0.0719, HR@20 = 0.2318, NDCG@20 = 0.0884, HR@50 = 0.3425, NDCG@50 = 0.1115  
+INFO:root:Epoch 29/100, Train: Loss = 29.9473, preLoss = -0.4643  
+INFO:root:Epoch 29/100, Test: HR@5 = 0.1271, NDCG@5 = 0.0575, HR@10 = 0.1728, NDCG@10 = 0.0717, HR@20 = 0.2311, NDCG@20 = 0.0879, HR@50 = 0.3432, NDCG@50 = 0.1113  
+INFO:root:Epoch 30/100, Train: Loss = 29.9316, preLoss = -0.4522  
+INFO:root:Epoch 30/100, Test: HR@5 = 0.1275, NDCG@5 = 0.0572, HR@10 = 0.1738, NDCG@10 = 0.0714, HR@20 = 0.2325, NDCG@20 = 0.0877, HR@50 = 0.3428, NDCG@50 = 0.1113  
+INFO:root:Epoch 31/100, Train: Loss = 29.9190, preLoss = -0.4339  
+INFO:root:Epoch 31/100, Test: HR@5 = 0.1275, NDCG@5 = 0.0572, HR@10 = 0.1734, NDCG@10 = 0.0713, HR@20 = 0.2325, NDCG@20 = 0.0877, HR@50 = 0.3462, NDCG@50 = 0.1118  
+INFO:root:Epoch 32/100, Train: Loss = 29.8862, preLoss = -0.4715  
+INFO:root:Epoch 32/100, Test: HR@5 = 0.1275, NDCG@5 = 0.0573, HR@10 = 0.1724, NDCG@10 = 0.0711, HR@20 = 0.2338, NDCG@20 = 0.0880, HR@50 = 0.3492, NDCG@50 = 0.1123  
+INFO:root:Epoch 33/100, Train: Loss = 29.8904, preLoss = -0.4478  
+INFO:root:Epoch 33/100, Test: HR@5 = 0.1281, NDCG@5 = 0.0573, HR@10 = 0.1711, NDCG@10 = 0.0707, HR@20 = 0.2341, NDCG@20 = 0.0878, HR@50 = 0.3512, NDCG@50 = 0.1124  
+INFO:root:Epoch 34/100, Train: Loss = 29.8246, preLoss = -0.5387  
+INFO:root:Epoch 34/100, Test: HR@5 = 0.1278, NDCG@5 = 0.0571, HR@10 = 0.1734, NDCG@10 = 0.0714, HR@20 = 0.2341, NDCG@20 = 0.0880, HR@50 = 0.3569, NDCG@50 = 0.1132  
+INFO:root:Epoch 35/100, Train: Loss = 29.8236, preLoss = -0.5040  
+INFO:root:Epoch 35/100, Test: HR@5 = 0.1288, NDCG@5 = 0.0571, HR@10 = 0.1744, NDCG@10 = 0.0711, HR@20 = 0.2378, NDCG@20 = 0.0882, HR@50 = 0.3616, NDCG@50 = 0.1136  
+INFO:root:Epoch 36/100, Train: Loss = 29.7723, preLoss = -0.5876  
+INFO:root:Epoch 36/100, Test: HR@5 = 0.1295, NDCG@5 = 0.0574, HR@10 = 0.1754, NDCG@10 = 0.0715, HR@20 = 0.2425, NDCG@20 = 0.0892, HR@50 = 0.3620, NDCG@50 = 0.1139  
+INFO:root:Epoch 37/100, Train: Loss = 29.7155, preLoss = -0.6639  
+INFO:root:Epoch 37/100, Test: HR@5 = 0.1298, NDCG@5 = 0.0575, HR@10 = 0.1781, NDCG@10 = 0.0721, HR@20 = 0.2466, NDCG@20 = 0.0901, HR@50 = 0.3670, NDCG@50 = 0.1150  
+INFO:root:Epoch 38/100, Train: Loss = 29.7148, preLoss = -0.6454  
+INFO:root:Epoch 38/100, Test: HR@5 = 0.1305, NDCG@5 = 0.0578, HR@10 = 0.1818, NDCG@10 = 0.0730, HR@20 = 0.2456, NDCG@20 = 0.0902, HR@50 = 0.3710, NDCG@50 = 0.1160  
+INFO:root:Epoch 39/100, Train: Loss = 29.6644, preLoss = -0.7493  
+INFO:root:Epoch 39/100, Test: HR@5 = 0.1305, NDCG@5 = 0.0570, HR@10 = 0.1845, NDCG@10 = 0.0729, HR@20 = 0.2486, NDCG@20 = 0.0903, HR@50 = 0.3730, NDCG@50 = 0.1164  
+INFO:root:Epoch 40/100, Train: Loss = 29.6472, preLoss = -0.6943  
+INFO:root:Epoch 40/100, Test: HR@5 = 0.1298, NDCG@5 = 0.0559, HR@10 = 0.1862, NDCG@10 = 0.0725, HR@20 = 0.2529, NDCG@20 = 0.0902, HR@50 = 0.3764, NDCG@50 = 0.1164  
+INFO:root:Epoch 41/100, Train: Loss = 29.6025, preLoss = -0.7757  
+INFO:root:Epoch 41/100, Test: HR@5 = 0.1302, NDCG@5 = 0.0562, HR@10 = 0.1869, NDCG@10 = 0.0726, HR@20 = 0.2526, NDCG@20 = 0.0902, HR@50 = 0.3767, NDCG@50 = 0.1166  
+INFO:root:Epoch 42/100, Train: Loss = 29.6063, preLoss = -0.7190  
+INFO:root:Epoch 42/100, Test: HR@5 = 0.1295, NDCG@5 = 0.0557, HR@10 = 0.1869, NDCG@10 = 0.0722, HR@20 = 0.2533, NDCG@20 = 0.0900, HR@50 = 0.3771, NDCG@50 = 0.1163  
+INFO:root:Epoch 43/100, Train: Loss = 29.5434, preLoss = -0.8311  
+INFO:root:Epoch 43/100, Test: HR@5 = 0.1308, NDCG@5 = 0.0558, HR@10 = 0.1875, NDCG@10 = 0.0722, HR@20 = 0.2566, NDCG@20 = 0.0906, HR@50 = 0.3804, NDCG@50 = 0.1168  
+INFO:root:Epoch 44/100, Train: Loss = 29.5407, preLoss = -0.8220  
+INFO:root:Epoch 44/100, Test: HR@5 = 0.1342, NDCG@5 = 0.0564, HR@10 = 0.1895, NDCG@10 = 0.0728, HR@20 = 0.2620, NDCG@20 = 0.0917, HR@50 = 0.3838, NDCG@50 = 0.1177  
+INFO:root:Epoch 45/100, Train: Loss = 29.4816, preLoss = -0.8971  
+INFO:root:Epoch 45/100, Test: HR@5 = 0.1359, NDCG@5 = 0.0571, HR@10 = 0.1919, NDCG@10 = 0.0735, HR@20 = 0.2677, NDCG@20 = 0.0930, HR@50 = 0.3861, NDCG@50 = 0.1188  
+INFO:root:Epoch 46/100, Train: Loss = 29.4735, preLoss = -0.8857  
+INFO:root:Epoch 46/100, Test: HR@5 = 0.1352, NDCG@5 = 0.0573, HR@10 = 0.1919, NDCG@10 = 0.0736, HR@20 = 0.2674, NDCG@20 = 0.0931, HR@50 = 0.3885, NDCG@50 = 0.1193  
+INFO:root:Epoch 47/100, Train: Loss = 29.4729, preLoss = -0.8550  
+INFO:root:Epoch 47/100, Test: HR@5 = 0.1338, NDCG@5 = 0.0572, HR@10 = 0.1922, NDCG@10 = 0.0739, HR@20 = 0.2674, NDCG@20 = 0.0934, HR@50 = 0.3911, NDCG@50 = 0.1198  
+INFO:root:Epoch 48/100, Train: Loss = 29.3935, preLoss = -1.0014  
+INFO:root:Epoch 48/100, Test: HR@5 = 0.1355, NDCG@5 = 0.0577, HR@10 = 0.1926, NDCG@10 = 0.0743, HR@20 = 0.2694, NDCG@20 = 0.0937, HR@50 = 0.3938, NDCG@50 = 0.1203  
+INFO:root:Epoch 49/100, Train: Loss = 29.3443, preLoss = -1.0715  
+INFO:root:Epoch 49/100, Test: HR@5 = 0.1372, NDCG@5 = 0.0577, HR@10 = 0.1946, NDCG@10 = 0.0745, HR@20 = 0.2761, NDCG@20 = 0.0946, HR@50 = 0.3962, NDCG@50 = 0.1203  
+INFO:root:Epoch 50/100, Train: Loss = 29.3441, preLoss = -1.1400  
+INFO:root:Epoch 50/100, Test: HR@5 = 0.1385, NDCG@5 = 0.0577, HR@10 = 0.2019, NDCG@10 = 0.0757, HR@20 = 0.2838, NDCG@20 = 0.0959, HR@50 = 0.3999, NDCG@50 = 0.1212  
+INFO:root:Epoch 51/100, Train: Loss = 29.2836, preLoss = -1.1452  
+INFO:root:Epoch 51/100, Test: HR@5 = 0.1442, NDCG@5 = 0.0595, HR@10 = 0.2060, NDCG@10 = 0.0766, HR@20 = 0.2861, NDCG@20 = 0.0969, HR@50 = 0.4036, NDCG@50 = 0.1221  
+INFO:root:Epoch 52/100, Train: Loss = 29.2692, preLoss = -1.1417  
+INFO:root:Epoch 52/100, Test: HR@5 = 0.1426, NDCG@5 = 0.0595, HR@10 = 0.2063, NDCG@10 = 0.0772, HR@20 = 0.2861, NDCG@20 = 0.0974, HR@50 = 0.4036, NDCG@50 = 0.1226  
+INFO:root:Epoch 53/100, Train: Loss = 29.2488, preLoss = -1.1701  
+INFO:root:Epoch 53/100, Test: HR@5 = 0.1409, NDCG@5 = 0.0590, HR@10 = 0.2060, NDCG@10 = 0.0770, HR@20 = 0.2872, NDCG@20 = 0.0975, HR@50 = 0.4039, NDCG@50 = 0.1227  
+INFO:root:Epoch 54/100, Train: Loss = 29.2031, preLoss = -1.1943  
+INFO:root:Epoch 54/100, Test: HR@5 = 0.1372, NDCG@5 = 0.0577, HR@10 = 0.2053, NDCG@10 = 0.0765, HR@20 = 0.2848, NDCG@20 = 0.0968, HR@50 = 0.4019, NDCG@50 = 0.1221  
+INFO:root:Epoch 55/100, Train: Loss = 29.2200, preLoss = -1.1494  
+INFO:root:Epoch 55/100, Test: HR@5 = 0.1355, NDCG@5 = 0.0572, HR@10 = 0.2036, NDCG@10 = 0.0762, HR@20 = 0.2858, NDCG@20 = 0.0969, HR@50 = 0.4002, NDCG@50 = 0.1219  
+INFO:root:Epoch 56/100, Train: Loss = 29.1632, preLoss = -1.2623  
+INFO:root:Epoch 56/100, Test: HR@5 = 0.1372, NDCG@5 = 0.0581, HR@10 = 0.2050, NDCG@10 = 0.0769, HR@20 = 0.2868, NDCG@20 = 0.0976, HR@50 = 0.4046, NDCG@50 = 0.1230  
+INFO:root:Epoch 57/100, Train: Loss = 29.1466, preLoss = -1.2441  
+INFO:root:Epoch 57/100, Test: HR@5 = 0.1389, NDCG@5 = 0.0587, HR@10 = 0.2060, NDCG@10 = 0.0772, HR@20 = 0.2892, NDCG@20 = 0.0982, HR@50 = 0.4056, NDCG@50 = 0.1234  
+INFO:root:Epoch 58/100, Train: Loss = 29.1065, preLoss = -1.3234  
+INFO:root:Epoch 58/100, Test: HR@5 = 0.1429, NDCG@5 = 0.0596, HR@10 = 0.2090, NDCG@10 = 0.0782, HR@20 = 0.2912, NDCG@20 = 0.0991, HR@50 = 0.4066, NDCG@50 = 0.1244  
+INFO:root:Epoch 59/100, Train: Loss = 29.1466, preLoss = -1.2187  
+INFO:root:Epoch 59/100, Test: HR@5 = 0.1439, NDCG@5 = 0.0598, HR@10 = 0.2100, NDCG@10 = 0.0784, HR@20 = 0.2915, NDCG@20 = 0.0992, HR@50 = 0.4076, NDCG@50 = 0.1249  
+INFO:root:Epoch 60/100, Train: Loss = 29.0478, preLoss = -1.4059  
+INFO:root:Epoch 60/100, Test: HR@5 = 0.1463, NDCG@5 = 0.0609, HR@10 = 0.2110, NDCG@10 = 0.0790, HR@20 = 0.2922, NDCG@20 = 0.0999, HR@50 = 0.4109, NDCG@50 = 0.1256  
+INFO:root:Epoch 61/100, Train: Loss = 29.0345, preLoss = -1.4104  
+INFO:root:Epoch 61/100, Test: HR@5 = 0.1466, NDCG@5 = 0.0615, HR@10 = 0.2130, NDCG@10 = 0.0798, HR@20 = 0.2942, NDCG@20 = 0.1006, HR@50 = 0.4123, NDCG@50 = 0.1261  
+INFO:root:Epoch 62/100, Train: Loss = 29.0198, preLoss = -1.4103  
+INFO:root:Epoch 62/100, Test: HR@5 = 0.1473, NDCG@5 = 0.0611, HR@10 = 0.2150, NDCG@10 = 0.0798, HR@20 = 0.2955, NDCG@20 = 0.1005, HR@50 = 0.4123, NDCG@50 = 0.1256  
+INFO:root:Epoch 63/100, Train: Loss = 28.9763, preLoss = -1.4792  
+INFO:root:Epoch 63/100, Test: HR@5 = 0.1476, NDCG@5 = 0.0616, HR@10 = 0.2140, NDCG@10 = 0.0799, HR@20 = 0.2949, NDCG@20 = 0.1007, HR@50 = 0.4133, NDCG@50 = 0.1259  
+INFO:root:Epoch 64/100, Train: Loss = 28.9330, preLoss = -1.6205  
+INFO:root:Epoch 64/100, Test: HR@5 = 0.1476, NDCG@5 = 0.0616, HR@10 = 0.2157, NDCG@10 = 0.0802, HR@20 = 0.2969, NDCG@20 = 0.1009, HR@50 = 0.4143, NDCG@50 = 0.1263  
+INFO:root:Epoch 65/100, Train: Loss = 28.9314, preLoss = -1.5211  
+INFO:root:Epoch 65/100, Test: HR@5 = 0.1503, NDCG@5 = 0.0620, HR@10 = 0.2154, NDCG@10 = 0.0798, HR@20 = 0.2972, NDCG@20 = 0.1010, HR@50 = 0.4146, NDCG@50 = 0.1266  
+INFO:root:Epoch 66/100, Train: Loss = 28.9401, preLoss = -1.5066  
+INFO:root:Epoch 66/100, Test: HR@5 = 0.1503, NDCG@5 = 0.0623, HR@10 = 0.2174, NDCG@10 = 0.0805, HR@20 = 0.2962, NDCG@20 = 0.1012, HR@50 = 0.4140, NDCG@50 = 0.1268  
+INFO:root:Epoch 67/100, Train: Loss = 28.8844, preLoss = -1.5749  
+INFO:root:Epoch 67/100, Test: HR@5 = 0.1486, NDCG@5 = 0.0619, HR@10 = 0.2160, NDCG@10 = 0.0803, HR@20 = 0.2962, NDCG@20 = 0.1011, HR@50 = 0.4150, NDCG@50 = 0.1269  
+INFO:root:Epoch 68/100, Train: Loss = 28.7857, preLoss = -1.8420  
+INFO:root:Epoch 68/100, Test: HR@5 = 0.1513, NDCG@5 = 0.0627, HR@10 = 0.2187, NDCG@10 = 0.0809, HR@20 = 0.2969, NDCG@20 = 0.1013, HR@50 = 0.4109, NDCG@50 = 0.1265  
+INFO:root:Epoch 69/100, Train: Loss = 28.8303, preLoss = -1.6824  
+INFO:root:Epoch 69/100, Test: HR@5 = 0.1533, NDCG@5 = 0.0637, HR@10 = 0.2221, NDCG@10 = 0.0823, HR@20 = 0.2989, NDCG@20 = 0.1023, HR@50 = 0.4103, NDCG@50 = 0.1270  
+INFO:root:Epoch 70/100, Train: Loss = 28.8011, preLoss = -1.7205  
+INFO:root:Epoch 70/100, Test: HR@5 = 0.1553, NDCG@5 = 0.0645, HR@10 = 0.2231, NDCG@10 = 0.0828, HR@20 = 0.3016, NDCG@20 = 0.1032, HR@50 = 0.4106, NDCG@50 = 0.1276  
+INFO:root:Epoch 71/100, Train: Loss = 28.8704, preLoss = -1.5443  
+INFO:root:Epoch 71/100, Test: HR@5 = 0.1570, NDCG@5 = 0.0650, HR@10 = 0.2258, NDCG@10 = 0.0834, HR@20 = 0.3029, NDCG@20 = 0.1035, HR@50 = 0.4133, NDCG@50 = 0.1281  
+INFO:root:Epoch 72/100, Train: Loss = 28.7718, preLoss = -1.7832  
+INFO:root:Epoch 72/100, Test: HR@5 = 0.1583, NDCG@5 = 0.0650, HR@10 = 0.2251, NDCG@10 = 0.0830, HR@20 = 0.3012, NDCG@20 = 0.1030, HR@50 = 0.4140, NDCG@50 = 0.1281  
+INFO:root:Epoch 73/100, Train: Loss = 28.8204, preLoss = -1.7511  
+INFO:root:Epoch 73/100, Test: HR@5 = 0.1593, NDCG@5 = 0.0657, HR@10 = 0.2214, NDCG@10 = 0.0832, HR@20 = 0.2992, NDCG@20 = 0.1033, HR@50 = 0.4083, NDCG@50 = 0.1278  
+INFO:root:Epoch 74/100, Train: Loss = 28.7760, preLoss = -1.6926  
+INFO:root:Epoch 74/100, Test: HR@5 = 0.1597, NDCG@5 = 0.0655, HR@10 = 0.2194, NDCG@10 = 0.0823, HR@20 = 0.2955, NDCG@20 = 0.1022, HR@50 = 0.4056, NDCG@50 = 0.1263  
+INFO:root:Epoch 75/100, Train: Loss = 28.6580, preLoss = -1.9485  
+INFO:root:Epoch 75/100, Test: HR@5 = 0.1587, NDCG@5 = 0.0657, HR@10 = 0.2221, NDCG@10 = 0.0831, HR@20 = 0.2982, NDCG@20 = 0.1030, HR@50 = 0.4076, NDCG@50 = 0.1271  
+INFO:root:Epoch 76/100, Train: Loss = 28.6769, preLoss = -1.8791  
+INFO:root:Epoch 76/100, Test: HR@5 = 0.1614, NDCG@5 = 0.0668, HR@10 = 0.2234, NDCG@10 = 0.0839, HR@20 = 0.2986, NDCG@20 = 0.1034, HR@50 = 0.4099, NDCG@50 = 0.1281  
+INFO:root:Epoch 77/100, Train: Loss = 28.6462, preLoss = -1.8967  
+INFO:root:Epoch 77/100, Test: HR@5 = 0.1614, NDCG@5 = 0.0667, HR@10 = 0.2234, NDCG@10 = 0.0842, HR@20 = 0.2996, NDCG@20 = 0.1038, HR@50 = 0.4106, NDCG@50 = 0.1287  
+INFO:root:Epoch 78/100, Train: Loss = 28.6515, preLoss = -1.8974  
+INFO:root:Epoch 78/100, Test: HR@5 = 0.1610, NDCG@5 = 0.0663, HR@10 = 0.2231, NDCG@10 = 0.0838, HR@20 = 0.3002, NDCG@20 = 0.1037, HR@50 = 0.4116, NDCG@50 = 0.1284  
+INFO:root:Epoch 79/100, Train: Loss = 28.6548, preLoss = -1.9373  
+INFO:root:Epoch 79/100, Test: HR@5 = 0.1597, NDCG@5 = 0.0662, HR@10 = 0.2238, NDCG@10 = 0.0843, HR@20 = 0.2972, NDCG@20 = 0.1034, HR@50 = 0.4093, NDCG@50 = 0.1280  
+INFO:root:Epoch 80/100, Train: Loss = 28.6612, preLoss = -1.8652  
+INFO:root:Epoch 80/100, Test: HR@5 = 0.1597, NDCG@5 = 0.0659, HR@10 = 0.2231, NDCG@10 = 0.0840, HR@20 = 0.2979, NDCG@20 = 0.1033, HR@50 = 0.4056, NDCG@50 = 0.1272  
+INFO:root:Epoch 81/100, Train: Loss = 28.7350, preLoss = -1.9767  
+INFO:root:Epoch 81/100, Test: HR@5 = 0.1503, NDCG@5 = 0.0622, HR@10 = 0.2180, NDCG@10 = 0.0804, HR@20 = 0.2861, NDCG@20 = 0.0978, HR@50 = 0.3918, NDCG@50 = 0.1203  
+INFO:root:Epoch 82/100, Train: Loss = 28.5963, preLoss = -2.0328  
+INFO:root:Epoch 82/100, Test: HR@5 = 0.1429, NDCG@5 = 0.0589, HR@10 = 0.2006, NDCG@10 = 0.0742, HR@20 = 0.2714, NDCG@20 = 0.0912, HR@50 = 0.3760, NDCG@50 = 0.1128  
+INFO:root:Epoch 83/100, Train: Loss = 28.5590, preLoss = -2.0255  
+INFO:root:Epoch 83/100, Test: HR@5 = 0.1419, NDCG@5 = 0.0589, HR@10 = 0.2046, NDCG@10 = 0.0754, HR@20 = 0.2801, NDCG@20 = 0.0933, HR@50 = 0.3834, NDCG@50 = 0.1145  
+INFO:root:Epoch 84/100, Train: Loss = 28.5353, preLoss = -2.1004  
+INFO:root:Epoch 84/100, Test: HR@5 = 0.1479, NDCG@5 = 0.0611, HR@10 = 0.2160, NDCG@10 = 0.0795, HR@20 = 0.2885, NDCG@20 = 0.0973, HR@50 = 0.3945, NDCG@50 = 0.1196  
+INFO:root:Epoch 85/100, Train: Loss = 28.5728, preLoss = -1.9850  
+INFO:root:Epoch 85/100, Test: HR@5 = 0.1503, NDCG@5 = 0.0619, HR@10 = 0.2197, NDCG@10 = 0.0808, HR@20 = 0.2925, NDCG@20 = 0.0991, HR@50 = 0.4029, NDCG@50 = 0.1224  
+INFO:root:Epoch 86/100, Train: Loss = 28.4545, preLoss = -2.2513  
+INFO:root:Epoch 86/100, Test: HR@5 = 0.1533, NDCG@5 = 0.0620, HR@10 = 0.2174, NDCG@10 = 0.0801, HR@20 = 0.2902, NDCG@20 = 0.0985, HR@50 = 0.3995, NDCG@50 = 0.1216  
+INFO:root:Epoch 87/100, Train: Loss = 28.4823, preLoss = -2.1020  
+INFO:root:Epoch 87/100, Test: HR@5 = 0.1520, NDCG@5 = 0.0605, HR@10 = 0.2164, NDCG@10 = 0.0785, HR@20 = 0.2895, NDCG@20 = 0.0971, HR@50 = 0.3935, NDCG@50 = 0.1194  
+INFO:root:Epoch 88/100, Train: Loss = 28.5426, preLoss = -2.1903  
+INFO:root:Epoch 88/100, Test: HR@5 = 0.1463, NDCG@5 = 0.0577, HR@10 = 0.2073, NDCG@10 = 0.0748, HR@20 = 0.2811, NDCG@20 = 0.0931, HR@50 = 0.3821, NDCG@50 = 0.1144  
+INFO:root:Epoch 89/100, Train: Loss = 28.4741, preLoss = -2.1142  
+INFO:root:Epoch 89/100, Test: HR@5 = 0.1476, NDCG@5 = 0.0588, HR@10 = 0.2083, NDCG@10 = 0.0754, HR@20 = 0.2794, NDCG@20 = 0.0934, HR@50 = 0.3814, NDCG@50 = 0.1148  
+INFO:root:Epoch 90/100, Train: Loss = 28.4296, preLoss = -2.1515  
+INFO:root:Epoch 90/100, Test: HR@5 = 0.1479, NDCG@5 = 0.0598, HR@10 = 0.2117, NDCG@10 = 0.0779, HR@20 = 0.2872, NDCG@20 = 0.0968, HR@50 = 0.3908, NDCG@50 = 0.1181  
+INFO:root:Epoch 91/100, Train: Loss = 28.4380, preLoss = -2.1153  
+INFO:root:Epoch 91/100, Test: HR@5 = 0.1510, NDCG@5 = 0.0615, HR@10 = 0.2164, NDCG@10 = 0.0800, HR@20 = 0.2932, NDCG@20 = 0.0992, HR@50 = 0.3962, NDCG@50 = 0.1208  
+INFO:root:Epoch 92/100, Train: Loss = 28.4232, preLoss = -2.2870  
+INFO:root:Epoch 92/100, Test: HR@5 = 0.1446, NDCG@5 = 0.0579, HR@10 = 0.2073, NDCG@10 = 0.0755, HR@20 = 0.2841, NDCG@20 = 0.0944, HR@50 = 0.3824, NDCG@50 = 0.1151  
+INFO:root:Epoch 93/100, Train: Loss = 28.4387, preLoss = -2.1517  
+INFO:root:Epoch 93/100, Test: HR@5 = 0.1382, NDCG@5 = 0.0551, HR@10 = 0.2003, NDCG@10 = 0.0711, HR@20 = 0.2710, NDCG@20 = 0.0888, HR@50 = 0.3680, NDCG@50 = 0.1090  
+INFO:root:Epoch 94/100, Train: Loss = 28.4121, preLoss = -2.1766  
+INFO:root:Epoch 94/100, Test: HR@5 = 0.1379, NDCG@5 = 0.0556, HR@10 = 0.1996, NDCG@10 = 0.0713, HR@20 = 0.2724, NDCG@20 = 0.0893, HR@50 = 0.3680, NDCG@50 = 0.1094  
+INFO:root:Epoch 95/100, Train: Loss = 28.4596, preLoss = -2.1822  
+INFO:root:Epoch 95/100, Test: HR@5 = 0.1332, NDCG@5 = 0.0526, HR@10 = 0.1922, NDCG@10 = 0.0678, HR@20 = 0.2657, NDCG@20 = 0.0854, HR@50 = 0.3579, NDCG@50 = 0.1044  
+INFO:root:Epoch 96/100, Train: Loss = 28.4011, preLoss = -2.1695  
+INFO:root:Epoch 96/100, Test: HR@5 = 0.1302, NDCG@5 = 0.0519, HR@10 = 0.1905, NDCG@10 = 0.0671, HR@20 = 0.2623, NDCG@20 = 0.0846, HR@50 = 0.3549, NDCG@50 = 0.1032  
+INFO:root:Epoch 97/100, Train: Loss = 28.3455, preLoss = -2.2984  
+INFO:root:Epoch 97/100, Test: HR@5 = 0.1342, NDCG@5 = 0.0531, HR@10 = 0.1936, NDCG@10 = 0.0685, HR@20 = 0.2667, NDCG@20 = 0.0863, HR@50 = 0.3586, NDCG@50 = 0.1051  
+INFO:root:Epoch 98/100, Train: Loss = 28.3793, preLoss = -2.2406  
+INFO:root:Epoch 98/100, Test: HR@5 = 0.1406, NDCG@5 = 0.0557, HR@10 = 0.1999, NDCG@10 = 0.0715, HR@20 = 0.2717, NDCG@20 = 0.0894, HR@50 = 0.3707, NDCG@50 = 0.1096  
+INFO:root:Epoch 99/100, Train: Loss = 28.2803, preLoss = -2.3945  
+INFO:root:Epoch 99/100, Test: HR@5 = 0.1442, NDCG@5 = 0.0574, HR@10 = 0.2056, NDCG@10 = 0.0735, HR@20 = 0.2781, NDCG@20 = 0.0916, HR@50 = 0.3801, NDCG@50 = 0.1127  
+INFO:root:Epoch 100/100, Test: HR@5 = 0.1442, NDCG@5 = 0.0574, HR@10 = 0.2056, NDCG@10 = 0.0735, HR@20 = 0.2781, NDCG@20 = 0.0916, HR@50 = 0.3801, NDCG@50 = 0.1127  
+INFO:root:Epoch 100/100, Best Result: HR@5 = 0.1614, NDCG@5 = 0.0668, HR@10 = 0.2234, NDCG@10 = 0.0839, HR@20 = 0.2986, NDCG@20 = 0.1034, HR@50 = 0.4099, NDCG@50 = 0.1281  
+INFO:root:
+--------------------------------------------- END: 2024-12-30 12:25:51 ---------------------------------------------
